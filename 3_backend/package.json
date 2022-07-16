@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "dev jikupmap backend homework",
+  "main": "index.js",
+  "author": "jikupmap",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "uuid": "^8.3.2",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  },
+  "scripts": {
+    "start": "nodemon .src/index.js"
+  }
+}
