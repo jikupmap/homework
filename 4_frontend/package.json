@@ -1,0 +1,11 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "dev jikupmap frontend homework",
+  "main": "index.html",
+  "author": "jikupmap",
+  "license": "MIT",
+  "source": "src/index.html",
+  "dependencies": {
+  }
+}
