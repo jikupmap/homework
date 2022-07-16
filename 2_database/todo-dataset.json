@@ -1,0 +1,6 @@
+[
+    { "title": "아침 6시 30분 기상하기", "category": 1, "isDone": true },
+    { "title": "아침 조깅 40분 하기", "category": 2, "isDone": false },
+    { "title": "출근 정시에 하기", "category": 3, "isDone": false },
+    { "title": "직업도 이번주 과제하기", "category": 4, "isDone": false }
+]

@@ -1,0 +1,14 @@
+version: "3"
+services:
+    mongodb:
+        image: mongo:5.0
+        restart: always
+        container_name: jikupmap-db
+        ports:
+            - "27017:27017"
+        env_file: .env
+        volumes:
+            - jikupmap-v:/data/db
+        command: sh db-init.sh
+volumes:
+    jikupmap-v:
