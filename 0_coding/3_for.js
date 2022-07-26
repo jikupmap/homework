@@ -4,16 +4,16 @@ for(let i=0; i < 5; i++) {
       process.stdout.write("◼");
     }
     process.stdout.write("\n");
-  };
+};
   
-  // map() 예제
-  const locals = ["강남", "강동", "중구"];
-  const localTags = locals.map((local, index) => {
+// map() 예제
+const locals = ["강남", "강동", "중구"];
+const localTags = locals.map((local, index) => {
     return `${index} 번째 지역구 ${local}`
-  });
+});
   
-  // forEach() 예제
-  localTags.forEach((local, _index) => {
+// forEach() 예제
+localTags.forEach((local, _index) => {
     console.log(local);
-  });
+});
   

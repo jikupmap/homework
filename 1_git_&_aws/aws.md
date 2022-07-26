@@ -19,15 +19,27 @@
 # 간단한 서버 만들어보기 (EC2)
 
 -   AMI(Amazon Machine Image) 선택 [링크](https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/ec2-instances-and-amis.html)
+    -   ubuntu server 22.04 LTS
+    -   64bit(x86)
 -   인스턴스 유형 선택
--   인스턴스 구성 (기본값으로)
-    -   서브넷
+    -   t2.micro
+-   키페어
+    -   새 키페어 생성
+-   네트워크 설정
     -   vpc
--   스토리지 추가 (기본값으로)
--   태그 추가 (기본값으오)
--   보안그룹 구성
--   키페어 저장 및 관리
--   SSH 프로토콜로 서버에 접속
+    -   보안그룹
+-   스토리지 구성 (기본값으로)
+-   태그 추가
+
+# 서버 접속 (SSH 프로토콜)
+
+- 보안 그룹 인바운드에 SSH 접속 추가
+    -  SSH, TCP, 22, 0.0.0.0/0
+
+```
+    chmod 400 {pem파일_이름}.pem
+    ssh -i {pem파일_이름}.pem ubuntu@{퍼블릭 IPv4 DNS}
+```
 
 # 간단한 스토리지 만들어보기
 
