@@ -16,7 +16,3 @@ docker image pull 받기
     // 접속
     docker exec -it {container name} bash
 ```
-
-# 셋팅
-
-# 수행미션
