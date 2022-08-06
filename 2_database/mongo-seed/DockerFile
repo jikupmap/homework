@@ -1,0 +1,4 @@
+FROM mongo
+
+COPY todo-dataset.json /todo-dataset.json
+CMD mongoimport --host mongodb --db jikupmap --collection todos --type json --file todo-dataset.json --jsonArray

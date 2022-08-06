@@ -1,1 +1,0 @@
-mongoimport --db jikupmap --collection todos --file todo-dataset.json

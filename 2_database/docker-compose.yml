@@ -9,6 +9,10 @@ services:
         env_file: .env
         volumes:
             - jikupmap-v:/data/db
-        command: sh db-init.sh
+    mongo-seed:
+        build: ./mongo-seed
+        depends_on:
+            - mongodb
+
 volumes:
     jikupmap-v:
