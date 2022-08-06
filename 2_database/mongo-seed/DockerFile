@@ -1,4 +1,4 @@
 FROM mongo:5.0
 
 COPY todo-dataset.json /todo-dataset.json
-CMD mongoimport -u "your username" -p "yoyr password" --host 127.0.0.1:27017 mongodb --db jikupmap --authenticationDatabase --collection todos --type json --file /todo-dataset.json --jsonArray
+CMD mongoimport -u "your username" -p "yoyr password" --host mongodb -d jikupmap -c todos --type json --file /todo-dataset.json --jsonArray --authenticationDatabase admin

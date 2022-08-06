@@ -1,16 +1,25 @@
 # 설치방법
 
-docker 설치
+## docker 설치
 ```
     sudo apt install docker.io
     sudo apt install docker-compose
 ```
 
-docker image pull 받기
+## docker image pull 받기
 
 ```
     docker pull mongo:5.0
 ```
+
+## docker 기본기능 활용
+```
+    docker images
+    docker ps
+    docker kill {container id}
+    docker logs
+```
+
 
 # 실행방법
 
@@ -25,10 +34,14 @@ docker image pull 받기
 
 # DB접속
 ```
-    root@287497040c07:/# mongo
+    root@287497040c07:/# mongo -u {your username} -p {your password}
 ```
 
-docker-compose ps
-docker-compose stop
-docker-compose rm
-docker-compose restart
+# DB접속
+```
+    docker-compose ps
+    docker-compose stop
+    docker-compose rm
+    docker-compose restart
+    docker-compos logs
+```
