@@ -20,7 +20,7 @@ docker image pull 받기
     // 실행확인
     docker-compose ps
     // 접속
-    docker exec -it {container name} bash
+    docker exec -it jikupmap-db bash
 ```
 
 # DB접속
