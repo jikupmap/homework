@@ -3,10 +3,12 @@ const mongoose = require('mongoose');
 
 const { DB_URI } = process.env;
 
+console.log("dongjo ", DB_URI)
+
 const connect = () => {
-  db.connect(DB_URI)
-  .then(() => console.log('Successfully connected to mongodb'))
-  .catch(e => console.error(e));
+  mongoose.connect(DB_URI, { useNewUrlParser: true })
+    .then(() => console.log('Successfully connected to mongodb'))
+    .catch(e => console.error(e));
 }
 
 mongoose.connection.on('disconnected', connect);
