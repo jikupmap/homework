@@ -51,3 +51,7 @@ $ git clone https://github.com/jikupmap/homework.git
 // project dir 안에서
 $ yarn start
 ```
+
+# API, DB 연결
+
+"mongodb://{user_name}:{password}@ec2-52-79-130-134.ap-northeast-2.compute.amazonaws.com:27017/jikupmap?authSource=admin&retryWrites=true&w=majority"
