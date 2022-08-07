@@ -32,12 +32,49 @@
     docker exec -it jikupmap-db bash
 ```
 
-# DB접속
+# vim 설치 (in Docker)
+
 ```
-    root@287497040c07:/# mongo -u {your username} -p {your password}
+$ apt update
+$ apt install vim
 ```
 
+# DB 보안 설정
+
+```
+vi etc/mongod.conf
+```
+-----
+#security:
+   authorization: "disabled"
+-----
+
 # DB접속
+```
+    mongo -u {your username} -p {your password}
+
+    show dbs
+    use jikupmap
+    show collections
+
+    db.todos.findOne();
+
+    db.todos.insertOne({
+        "title" : "아침 6시 30분 기상하기",
+        "category" : 1,
+        "isDone" : true
+    });
+
+    db.todos.updateOne({ title: "아침 6시 30분 기상하기" } , { $set: { isDone : false }})
+
+    db.todos.remove({ title: "아침 6시 30분 기상하기" });
+```
+
+
+apt update
+apt install vim
+
+# docker-compose 기본기능 활용
 ```
     docker-compose ps
     docker-compose stop
