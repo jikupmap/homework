@@ -54,4 +54,6 @@ $ yarn start
 
 # API, DB 연결
 
-"mongodb://{user_name}:{password}@ec2-52-79-130-134.ap-northeast-2.compute.amazonaws.com:27017/jikupmap?authSource=admin&retryWrites=true&w=majority"
+```
+"mongodb://{user_name}:{password}@{DB_URL}:27017/{DB_NAME}?authSource=admin&retryWrites=true&w=majority"
+```
